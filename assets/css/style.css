@@ -1,23 +1,35 @@
 :root{
     --muteColor: rgb(250, 223, 185);
-    --boldColor: rgb(138, 94, 0);
+    --boldColor: white;
 }
 
 body{
     margin: 0;
+    background-color: black;
+}
+
+#pageBackgroundLayer{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/frameTextUnder.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(15px) brightness(0.5);
+    margin-top: -100vh;
+    z-index: -10;
 }
 
 #page{
     width: 100vw;
     height: 100vh;
     color: var(--boldColor);
-    background-color: var(--muteColor);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
+    z-index: 100;
 }
 
 #pageContainer{
@@ -29,16 +41,21 @@ body{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: inherit;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
 }
 
 #headerImage{
     width: 200px;
     border-radius: 50%;
     margin: 25px;
+    z-index: inherit;
 }
 
 #header h1{
-    margin-top: -15px;
+    text-transform: uppercase;
+    z-index: inherit;
 }
 
 .vertRow{
@@ -46,6 +63,7 @@ body{
     width: 2px;
     background-color: var(--boldColor);
     margin: 50px;
+    z-index: inherit;
 }
 
 ul, li{
@@ -53,7 +71,30 @@ ul, li{
     padding: 0;
     text-align: left;
     font-size: 16pt;
+    z-index: inherit;
 }
 li{
     margin: 15px;
+    z-index: inherit;
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    z-index: inherit;
+}
+.hidden{
+    display: none;
+}
+.card{
+    width: auto;
+    height: auto;
+    padding: 50px;
+    border: 2px solid var(--boldColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    z-index: inherit;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.25);
 }
