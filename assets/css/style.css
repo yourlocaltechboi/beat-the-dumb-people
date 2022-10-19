@@ -1,6 +1,7 @@
 :root{
     --muteColor: rgb(250, 223, 185);
     --boldColor: white;
+    --DSUImage: url('../img/frameTextUnder.png')
 }
 
 body{
@@ -11,7 +12,7 @@ body{
 #pageBackgroundLayer{
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/frameTextUnder.png");
+    background-image: var(--DSUImage);
     background-size: cover;
     background-position: center;
     filter: blur(15px) brightness(0.5);
@@ -44,6 +45,8 @@ body{
     z-index: inherit;
     padding: 50px;
     background-color: rgba(255, 255, 255, 0.25);
+    margin: 50px;
+    margin-right: 25px;
 }
 
 #headerImage{
@@ -86,15 +89,17 @@ li:hover{
     display: none;
 }
 .card{
-    width: auto;
-    height: auto;
+    width: 350px;
+    height: 350px;
     padding: 50px;
     border: 2px solid var(--boldColor);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: inherit;
     padding: 50px;
+    margin: 50px;
+    margin-left: 25px;
     background-color: rgba(255, 255, 255, 0.25);
 }
