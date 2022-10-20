@@ -76,14 +76,25 @@ ul, li{
     font-size: 16pt;
     z-index: inherit;
 }
-li{
+.menuItem{
     margin: 15px;
+    margin-left: 5px;
+    padding: 10px;
     z-index: inherit;
+    color: white;
 }
-li:hover{
-    text-decoration: underline;
-    cursor: pointer;
+.menuItem:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+.menuItemActive{   
+    margin: 15px;
+    margin-left: 5px;
     z-index: inherit;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
 }
 .hidden{
     display: none;
