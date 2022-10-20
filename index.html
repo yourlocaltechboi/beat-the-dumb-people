@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <noscript style="z-index: 400;">
+        <h1 style="font-size: 48pt; z-index: inherit; color: red;">Please enable JavaScript on this page.</h1>
+    </noscript>
     <div id="page">
         <div id="pageContainer">
             <div id="header">
@@ -17,22 +20,36 @@
             <div id="content">
                 <div id="contentMenu">
                     <ul>
-                        <li>About Me</li>
-                        <li>My Projects</li>
-                        <li>My Work Experience</li>
-                        <li>Contact Me</li>
+                        <li class="menuItem" id="aboutButton">About Me</li>
+                        <li class="menuItem" id="projectsButton">My Projects</li>
+                        <li class="menuItem" id="workButton">My Work Experience</li>
+                        <li class="menuItem" id="contactButton">Contact Me</li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div id="aboutContentCard" class="card">
+        <div id="aboutContentCard" class="card" style="display: none;">
             <h1>About Me</h1>
             <p>Hi! My name is Anden Wieseler.<br><br>I'm an undergraduate Cyber Operations student at Dakota State University in Madison, SD.</p>
+            <p>I like to cook, code, drink coffee, sleep, wash, rinse, repeat. Currently I'm working on redoing my portfolio (this site), and I'm also working on a web app that replaces Facebook's profile frames feature, bringing back the ability to use custom frames.</p>
         </div>
-        <div id="projectsContentCard" class="card" style="display: none;"></div>
-        <div id="workContentCard" class="card" style="display: none;"></div>
-        <div id="contactContentCard" class="card" style="display: none;"></div>
+        <div id="projectsContentCard" class="card" style="display: none;">
+            <h1>My Projects</h1>
+            <div class="projectLink" id="profileFramerLink"><p>Profile Framer</p></div>
+            <div class="projectLink" id="walkthroughLink"><p>Jailbreak Walkthrough</p></div>
+            <div class="projectLink" id="webDevChallengeLink"><p>Emry Fall 2022 Web Dev Challenge</p></div>
+            <div class="projectLink" id="toggleLink"><p>Toggle Bot Framework</p></div>
+        </div>
+        <div id="workContentCard" class="card" style="display: none;">
+            <h1>My Work Experience</h1>
+            <p>My work experience will go here :)</p>
+        </div>
+        <div id="contactContentCard" class="card" style="display: none;">
+            <h1>Contact Me</h1>
+            <p>My contact info will go here :)</p>
+        </div>
     </div>
     <div id="pageBackgroundLayer"></div>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
