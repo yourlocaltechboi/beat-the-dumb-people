@@ -82,10 +82,15 @@ ul, li{
     padding: 10px;
     z-index: inherit;
     color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid var(--boldColor);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menuItem:hover{
     background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
 }
 .menuItemActive{   
     margin: 15px;
@@ -94,7 +99,11 @@ ul, li{
     color: white; 
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: 5px;
+    border: 2px solid var(--boldColor);
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hidden{
     display: none;
@@ -113,4 +122,23 @@ ul, li{
     margin: 50px;
     margin-left: 25px;
     background-color: rgba(255, 255, 255, 0.25);
+}
+
+.subMenuLink{
+    width: 350px;
+    height: 50px;
+    margin: 12.5px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.25);
+    border: 2px solid var(--boldColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+}
+.subMenuLink:hover{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.subMenuLink p{
+    user-select: none;
 }
