@@ -13,7 +13,7 @@ const toggleLink = document.querySelector("#toggleLink");
 const dsuWorkLink = document.querySelector("#dsuWorkLink");
 const globeWorkLink = document.querySelector("#globeWorkLink");
 const arborCareWorkLink = document.querySelector("#arborCareWorkLink");
-const ccnWorkLink = document.querySelector("#ccnWorkLink");
+const ccnWorkLink = document.querySelector("#newsWorkLink");
 
 // Import Boxes
 
